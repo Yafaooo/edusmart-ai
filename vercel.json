@@ -6,10 +6,7 @@
               }
       },
       "routes": [
-              {
-                        "src": "/(css|js|images|favicon.ico)(.*)",
-                        "dest": "/public/$1$2"
-              },
+              { "handle": "filesystem" },
               {
                         "src": "/(.*)",
                         "dest": "/api/index.php"
