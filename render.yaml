@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: edusmart-ai
+    runtime: docker
+    plan: free
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: LOG_CHANNEL
+        value: stderr
+      - key: DB_CONNECTION
+        value: pgsql
+      - key: DB_HOST
+        value: pg-20058b88-yafao-2804.g.aivencloud.com
+      - key: DB_PORT
+        value: "10743"
+      - key: DB_DATABASE
+        value: defaultdb
+      - key: DB_USERNAME
+        value: avnadmin
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_SSLMODE
+        value: require
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: APP_KEY
+        sync: false
