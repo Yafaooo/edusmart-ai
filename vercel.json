@@ -2,13 +2,10 @@
     "version": 2,
     "functions": {
         "api/index.php": {
-            "runtime": "vercel-php@0.7.2"
+            "runtime": "vercel-php"
         }
     },
     "routes": [
-        {
-            "handle": "filesystem"
-        },
         {
             "src": "/(css|js|images|favicon.ico)(.*)",
             "dest": "/public/$1$2"
